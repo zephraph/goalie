@@ -1,4 +1,7 @@
 {
+  "extensions": {
+    "biome": false
+  },
   "languages": {
     "TypeScript": {
       "language_servers": ["deno", "!typescript-language-server"],
