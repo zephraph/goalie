@@ -1,3 +1,22 @@
 [tools]
 deno = "2.4.1"
 "npm:backlog.md" = "1.2.3"
+
+[hooks]
+postinstall = "deno install"
+
+[env]
+_.path = "node_modules/.bin"
+_.file = ".env"
+
+[tasks.dev]
+description = "Run in development mode with file watching"
+run = "deno run --allow-all --watch src/main.ts"
+
+[tasks.build]
+description = "Build the goalie binary"
+run = "deno compile --allow-all --output ./bin/goalie src/main.ts"
+
+[tasks.start]
+description = "Run the application"
+run = "deno run --allow-all src/main.ts"

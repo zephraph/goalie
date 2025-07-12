@@ -13,9 +13,10 @@ A TUI/CLI app to help you accomplish your goals by breaking them down into actio
 
 ## Installation
 
-1. Ensure you have Deno 2.4+ installed
+1. Ensure you have mise installed
 2. Clone this repository
-3. Run `deno task build` to compile the binary
+3. Run `mise install` to download dependencies
+3. Run `mise run build` to compile the binary
 
 ## Usage
 
@@ -101,12 +102,14 @@ When creating goals, Goalie generates prompts for Claude Code to help break down
 
 ```bash
 # Run in development mode
-deno task dev
+mise run dev
 
 # Build binary
-deno task build
+mise run build
 
 # Run directly
+mise run start
+# or
 deno run --allow-all src/main.ts --help
 ```
 

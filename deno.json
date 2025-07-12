@@ -2,11 +2,6 @@
   "name": "goalie",
   "version": "0.1.0",
   "exports": "./src/main.ts",
-  "tasks": {
-    "dev": "deno run --allow-all --watch src/main.ts",
-    "build": "deno compile --allow-all --output ./bin/goalie src/main.ts",
-    "start": "deno run --allow-all src/main.ts"
-  },
   "imports": {
     "commander": "npm:commander@^12.0.0",
     "ink": "npm:ink@^5.0.1",
