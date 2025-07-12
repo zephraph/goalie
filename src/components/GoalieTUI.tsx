@@ -47,7 +47,7 @@ export const GoalieTUI: React.FC = () => {
     }
   };
 
-  useInput((input, key) => {
+  useInput((_input, key) => {
     if (loading) return;
 
     if (key.escape) {

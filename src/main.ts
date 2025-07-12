@@ -121,7 +121,7 @@ program
   .action(() => {
     try {
       render(React.createElement(GoalieTUI));
-    } catch (error) {
+    } catch (_error) {
       console.error('TUI interface not supported in this environment.');
       console.log('Please use the CLI commands instead.');
       console.log('Run "goalie --help" to see available commands.');

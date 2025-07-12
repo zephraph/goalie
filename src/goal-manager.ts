@@ -190,7 +190,14 @@ The expected JSON format is:
       const tasksData = JSON.parse(jsonMatch[0]);
       const tasks: Task[] = [];
 
-      tasksData.forEach((taskData: any, index: number) => {
+      tasksData.forEach((taskData: {
+        title?: string;
+        description?: string;
+        priority?: 'low' | 'medium' | 'high';
+        difficulty?: number;
+        timeEstimate?: number;
+        dependencies?: string[];
+      }, index: number) => {
         const taskId = (index + 1).toString();
         
         const task: Task = {

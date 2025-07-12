@@ -1,4 +1,4 @@
-import { join, type dirname } from '@std/path';
+import { join } from '@std/path';
 import { ensureDir, exists } from '@std/fs';
 import type { Goal, Task } from './types.ts';
 
@@ -156,7 +156,7 @@ export class FileUtils {
     };
 
     let inDescription = false;
-    let descriptionLines: string[] = [];
+    const descriptionLines: string[] = [];
 
     for (const line of lines) {
       if (line.startsWith('# ')) {
