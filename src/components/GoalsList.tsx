@@ -1,6 +1,6 @@
-import React from 'react';
+import type React from 'react';
 import { Box, Text } from 'ink';
-import { Goal } from '../types.ts';
+import type { Goal } from '../types.ts';
 
 interface GoalsListProps {
   goals: Goal[];

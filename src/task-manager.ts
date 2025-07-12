@@ -1,4 +1,4 @@
-import { Task, Goal } from './types.ts';
+import type { Task, Goal } from './types.ts';
 import { FileUtils } from './file-utils.ts';
 
 export class TaskManager {

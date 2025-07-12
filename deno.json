@@ -4,7 +4,7 @@
   "exports": "./src/main.ts",
   "tasks": {
     "dev": "deno run --allow-all --watch src/main.ts",
-    "build": "deno compile --allow-all --no-check --output ./bin/goalie src/main.ts",
+    "build": "deno compile --allow-all --output ./bin/goalie src/main.ts",
     "start": "deno run --allow-all src/main.ts"
   },
   "imports": {
@@ -18,7 +18,8 @@
   },
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "react",
+    "jsxImportSource": "npm:react@^18.3",
+    "jsxImportSourceTypes": "npm:@types/react@^18.3",
     "strict": false
   },
   "nodeModulesDir": "auto",

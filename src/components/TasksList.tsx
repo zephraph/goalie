@@ -1,6 +1,6 @@
-import React from 'react';
+import type React from 'react';
 import { Box, Text } from 'ink';
-import { Task } from '../types.ts';
+import type { Task } from '../types.ts';
 
 interface TasksListProps {
   tasks: Task[];

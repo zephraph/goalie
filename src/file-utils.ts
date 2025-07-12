@@ -1,6 +1,6 @@
-import { join, dirname } from '@std/path';
+import { join, type dirname } from '@std/path';
 import { ensureDir, exists } from '@std/fs';
-import { Goal, Task } from './types.ts';
+import type { Goal, Task } from './types.ts';
 
 export class FileUtils {
   private goalsDir: string;

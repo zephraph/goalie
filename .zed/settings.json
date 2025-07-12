@@ -26,6 +26,12 @@
           "unstable": false,
           "config": "./deno.json",
           "importMap": null,
+          "suggest": {
+            "autoImports": true,
+            "completeFunctionCalls": true,
+            "names": true,
+            "paths": true
+          },
           "codeLens": {
             "implementations": true,
             "references": true,

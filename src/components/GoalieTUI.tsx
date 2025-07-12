@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import type React, { useState, useEffect } from 'react';
 import { Box, Text, useInput } from 'ink';
 import { GoalsList } from './GoalsList.tsx';
 import { TasksList } from './TasksList.tsx';
-import { Goal, Task } from '../types.ts';
+import type { Goal, Task } from '../types.ts';
 import { GoalManager } from '../goal-manager.ts';
 import { TaskManager } from '../task-manager.ts';
 
