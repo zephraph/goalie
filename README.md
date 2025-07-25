@@ -1,5 +1,8 @@
 # Goalie
 
+> [!NOTE]
+> This project is just an experiment and not intended to be directly used right now. I hope it may be of some inspiration to someone though. 
+
 A TUI/CLI app to help you accomplish your goals by breaking them down into actionable tasks.
 
 ## Features
